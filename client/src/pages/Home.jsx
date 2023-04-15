@@ -19,32 +19,6 @@ const Home = () => {
     fetchData();
   }, [cat]);
 
-  // const posts = [
-  //   {
-  //     id: 1,
-  //     title: "Lorem ipsum dolor sit amet",
-  //     desc: "Lorem ipsum dolor sit amet",
-  //     img: "https://placekitten.com/640/360",
-  //   },
-  //   {
-  //     id: 2,
-  //     title: "Lorem ipsum dolor sit amet",
-  //     desc: "Lorem ipsum dolor sit amet",
-  //     img: "https://placekitten.com/640/360",
-  //   },
-  //   {
-  //     id: 3,
-  //     title: "Lorem ipsum dolor sit amet",
-  //     desc: "Lorem ipsum dolor sit amet",
-  //     img: "https://placekitten.com/640/360",
-  //   },
-  //   {
-  //     id: 4,
-  //     title: "Lorem ipsum dolor sit amet",
-  //     desc: "Lorem ipsum dolor sit amet",
-  //     img: "https://placekitten.com/640/360",
-  //   },
-  // ];
   const getText = (html) => {
     const doc = new DOMParser().parseFromString(html, "text/html");
     return doc.body.textContent;
